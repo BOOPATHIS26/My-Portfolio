@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault(); // Prevent form from submitting
+            alert("Your message has been submitted successfully!");
+            // Redirect to another page (success page)
+            window.location.href = 'success.html'; // Change 'success.html' to your target page
+        }
+    </script>
+    <style>
+        /* Global background color */
+        body {
+            background-color: #0703032f; /* Pastel gray */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header background color */
+        header {
+            background-color: #d19f53; /* Pastel peach */
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: rgb(5, 3, 3);
+            text-decoration: none;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .intro h1 {
+            font-size: 2.5em;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .social-icons a {
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #a85b02d7; /* Pastel pink */
+            padding: 10px 20px;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #db981b; /* Slightly darker pink on hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #000000; /* White background for sections */
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section ul {
+            list-style-type: none;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-container .skill {
+            background-color: #d6a212d5; /* Pastel yellow for skills section */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Set a maximum height */
+            object-fit: contain; /* This ensures the image is cropped to fit within the specified height */
+        }
+
+        .section-divider {
+            border-top: 2px solid #000000; /* Light gray line */
+            margin: 40px 0;
+        }
+
+        #skills {
+            background-color: #b37d08; /* Pastel green for skills section */
+        }
+
+        #open-source {
+            background-color: #c49b17; /* Pastel purple for open-source section */
+        }
+
+        #projects {
+            background-color: #bd940c; /* Pastel mint for projects section */
+        }
+
+
+        #contact {
+            background-color: #c0860a; /* Pastel light green for contact section */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#open-source">Open Source</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="intro">
+                <h1>Hi All! Myself Boopathi..</h1>
+                <p>A passionate II-year student pursuing B.Sc in Computer Science at Rathinam Technical Campus. </p>
+                
+                <div class="buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="C:\Users\user\Desktop\Internship projects\My Portfolio\MyResume.pdf.pdf" class="btn" download>See My Resume</a> <!-- Local resume file -->
+                </div>
+            </div>
+            <div class="image">
+                <img src="image.jpg.jpg" alt="Illustration">
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>PYTHON</h3>
+                <p>Python is a versatile and user-friendly programming language renowned for its simplicity and readability. It's widely used for web development, data analysis, artificial intelligence, and creating interactive GUI applications.</p>
+            </div>
+            <div class="skill">
+                <h3>C</h3>
+                <p>C is a powerful, general-purpose programming language ideal for system-level programming and foundational concepts. It is known for its speed and efficiency, making it a great choice for building applications like operating systems and embedded systems.</p>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <p>SQL (Structured Query Language) is the standard language for managing and manipulating relational databases. It is widely used for querying, updating, and organizing data efficiently, making it an essential skill for data analysis, web development, and database management.</p>
+            </div>
+            <div class="skill">
+                <h3>Data Structures and Algorithms Using C</h3>
+                <p>Learning data structures with C provides a strong understanding of efficient algorithms for handling and organizing data. It enables solving real-world problems by implementing structures like arrays, linked lists, stacks, queues, and trees.</p>
+            </div>
+            <div class="skill">
+                <h3>HTML and CSS</h3>
+                <p>HTML and CSS form the backbone of web development. HTML provides the structure for web pages, while CSS enhances their appearance, enabling the creation of visually appealing and responsive websites as a front-end developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div> <!-- Divider line between sections -->
+
+    <section id="open-source">
+        <h2>Open Source</h2>
+        <p>Contributed to various open-source projects, including:</p>
+        <ul>
+            <li><a href="#">Project 1</a> - A Recipe Recommendation System for specified ingredients at restaurants and home.</li>
+            <li><a href="#">Project 2</a> - A Landing page for jewellery as part in Front-end</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1: RECIPE RECOMMENDATION SYSTEM</h3>
+            <img src="project1-image.jpg" alt="Project 1">
+            <p> A recipe recommendation system is a tool designed to suggest recipes based on available ingredients or user preferences. It leverages algorithms to match ingredients with suitable dishes, making meal planning easier and reducing food waste. These systems are helpful for individuals, restaurants, and meal prep services, providing quick and personalized culinary solutions. </p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2: LANDING PAGE</h3>
+            <img src="proj1-image.jpg" alt="Project 2">
+            <p>A jewellery landing page is a visually stunning and user-friendly web page designed to showcase jewellery collections. It highlights key products, offers, or promotions with elegant visuals, persuasive text, and clear call-to-actions like "Buy Now" or "Explore Collections." The goal is to attract potential customers and drive sales by creating a captivating first impression.</p>
+        </div>
+    </section>
+   
+    <section id="contact">
+        <h2>Contact</h2>
+        <form onsubmit="showConfirmation(event)" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Boopathi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
